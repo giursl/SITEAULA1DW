@@ -1,0 +1,191 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo do site */
+body {
+    background-color: #ff4980;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 185, 237, 0.9); /* leve transparência */
+    color: #fff;
+    padding: 0.8rem 2rem;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* altura da logo */
+    width: auto; /* mantém proporção */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff4980; /* muda cor ao passar o mouse */
+}
+
+
+/* Main */
+main {
+    padding: 3rem 2rem;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar linha em telas menores */
+    gap: 2rem;
+    justify-content: center; /* centraliza os cards */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.4s, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.card p {
+    margin-bottom: 1.2rem;
+    color: #555;
+}
+
+.card button {
+    padding: 0.6rem 1rem;
+    border: none;
+    background-color: #131921;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px; /* topo arredondado */
+    margin-bottom: 1rem;
+}
+
+.soshi_spotify {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px; /* <-- espaço entre o player e a tabela */
+  padding: 20px;
+}
+
+.table-section {
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+
+.table-section table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 70%;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-section th, .table-section td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-section a {
+  color: #ff4980;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Tabela estilizada */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+thead {
+    background-color: #131921;
+    color: #fff;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f4f4f4;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f57eb0;
+    color: #fff;
+}
+h2{
+ margin-top: 20px;
+ margin-bottom: 20px; 
+ color:#fff;
+}
+button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.card button, 
+.card a.btn {
+  margin-top: auto;
+}
